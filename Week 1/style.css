@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+
+h1 {
+    color: pink;
+    font-family: "DynaPuff", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+p {
+    color:pink;
+    font-size: 20px;
+    font-family: "DynaPuff", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+ul {
+    color: pink;
+    font-size:20px;
+    font-family: "DynaPuff", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+body {
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer"
+}
+
+header {
+    background-color: #fcb5b5;
+    padding: 20px;
+    grid-area: header;
+    text-align: center;
+    }
+    nav {
+    background-color: #faf6f6;
+    grid-area: nav;
+    }
+    main {
+    background-color: #FCDDF2;
+    grid-area: main;
+    padding:20px;
+    height: 64vh;
+    }
+    aside {
+    background-color: #cf8e80;
+    grid-area: aside;
+    padding: 20px;
+    height: 64vh;
+    }
+    footer {
+    background-color: #916953;
+    color: white;
+    grid-area: footer;
+    }
+
+    nav .modules {
+        display: flex;
+        justify-content: space-around;
+    }
